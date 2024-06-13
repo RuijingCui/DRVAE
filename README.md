@@ -3,7 +3,7 @@ This is the code for our paper: [Disentangled Representation via Variational Aut
 # Abstract
 Continuous treatment effect estimation holds significant practical importance across various decision-making and assessment domains. However, current methods for estimating dose-response curves hinge on balancing the entire representation by treating all covariates as confounding variables. Although various approaches disentangle covariates into different factors for treatment effect estimation, they are confined to binary treatment settings. Moreover, observational data are often tainted with non-causal noise information that is imperceptible to the human. Hence, in this paper, we propose a novel Dose-Response curve estimator via Variational AutoEncoder (DRVAE) disentangled covariates representation. Our model is dedicated to disentangling covariates into instrumental factors, confounding factors, adjustment factors, and external noise factors, thereby facilitating the estimation of treatment effects under continuous settings by balancing the disentangled confounding factors.  Extensive results on synthetic and semi-synthetic datasets demonstrate that our model outperforms the current state-of-the-art methods.
 
-![model structure](DRVAE.png)
+![model structure](figures/DRVAE.png)
 
 This code is based on VCNet: https://github.com/lushleaf/varying-coefficient-net-with-functional-tr/blob/main/README.md#how-to-run
 Datasets are also available there.
@@ -21,7 +21,7 @@ The model was implemented in Python 3.8. with pytorch 2.2.2:
 
 python simu1_generate_data_withBinNoise.py
 
--- train and evaluating the methods
+-- train and evaluate the methods
 
 python main_simu.py
 
@@ -35,6 +35,6 @@ The LaTex environment is necessary for reproducing the picture.
 python visualize_results.py
 
 -- Bellow is the main DR-curves.
-![DR curve](plot_simu(1).jpeg)
-![DR curve](plot_ihdp.jpeg)
-![DR curve](plot_news.jpeg)
+![DR curve](figures/plot_simu(1).jpeg)
+![DR curve](figures/plot_ihdp.jpeg)
+![DR curve](figures/plot_news.jpeg)
