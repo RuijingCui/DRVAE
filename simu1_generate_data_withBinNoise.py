@@ -1,3 +1,5 @@
+##This code is based on VCNet: https://github.com/lushleaf/varying-coefficient-net-with-functional-tr/blob/main/README.md#how-to-run
+
 import os
 import numpy as np
 
