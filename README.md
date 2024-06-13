@@ -5,8 +5,6 @@ Continuous treatment effect estimation holds significant practical importance ac
 
 ![model structure](figures/DRVAE.png)
 
-This code is based on VCNet: https://github.com/lushleaf/varying-coefficient-net-with-functional-tr/blob/main/README.md#how-to-run
-Datasets are also available there.
 # How to run
 ## Dependencies
 
